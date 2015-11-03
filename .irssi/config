@@ -4,32 +4,25 @@ servers = (
     chatnet = "Ubuntu";
     port = "6697";
     use_ssl = "yes";
-  },
-  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  { address = "irc.esper.net"; chatnet = "EsperNet"; port = "6667"; },
-  { 
-    address = "chat.freenode.net";
-    chatnet = "Freenode";
-    port = "6667";
+  }
+  {
+      address = "benjeffery.ca";
+      chatnet = "benjeffery";
+      port = "6697";
+      use_ssl = "yes";
   }
 );
 
 chatnets = {
-  Ubuntu = { 
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "4";
-    max_whois = "1";
-  };
-  DALnet = { type = "IRC"; };
-  EFNet = { type = "IRC"; };
-  EsperNet = { type = "IRC"; };
-  Freenode = { type = "IRC"; };
+  benjeffery = { type = "IRC"; };
 };
 
-channels = ( 
-  { name = "#lobby"; chatnet = "EsperNet"; autojoin = "No"; }
+channels = (
+    {
+            name = "#cipwttkt";
+            chatnet = "benjeffery";
+            autojoin = "Yes";
+    }
 );
 
 aliases = {

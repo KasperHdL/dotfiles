@@ -13,4 +13,23 @@ curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX
 dnvm upgrade -r coreclr
 dnvm upgrade -r mono
 
+# Install Atom
+wget https://atom.io/download/deb -O atom.deb
+dpkg -i atom-amd64.deb
+rm atom.deb
+
+# Install Omnisharp for Atom
 apm install omnisharp-atom
+
+# Install Unity3D
+wget http://download.unity3d.com/download_unity/unity-editor-5.1.0f3+2015091501_amd64.deb -O unity-editor.deb
+dpkg -i unity-editor.deb
+rm unity-editor.deb
+
+# Install SmartGit
+wget http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-7_0_3.deb -O smartgit.deb
+dpkg -i smartgit.deb
+rm smartgit.deb
+
+echo "Finished installing everything together with dotfiles!"
+echo "Happy coding $USER"
