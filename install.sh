@@ -1,7 +1,7 @@
 # /bin/sh
 
 # Install all the junk I need
-sudo apt-get wget git curl install blender build-essential irssi screen chromium-browser git pm-utils make automake powertop python thermald ttf-ancient-fonts unzip zsh qemu libunwind8 gettext libssl-dev libcurl3-dev zlib1g libicu-dev
+sudo apt-get install wget git curl  blender build-essential irssi screen chromium-browser git pm-utils make automake powertop python thermald ttf-ancient-fonts unzip zsh qemu libunwind8 gettext libssl-dev libcurl3-dev zlib1g libicu-dev
 
 # Install Mono
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
