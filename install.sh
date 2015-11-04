@@ -15,7 +15,7 @@ dnvm upgrade -r mono
 
 # Install Atom
 wget https://atom.io/download/deb -O atom.deb
-sudo dpkg -i atom-amd64.deb
+sudo dpkg -i atom.deb
 rm atom.deb
 
 # Install Omnisharp for Atom
