@@ -25,7 +25,9 @@ rm atom.deb
 sudo apt-get install vim
 git clone https://github.com/KasperHdL/vim
 mv -fdr vim .vim
-ln -s .vim/vimrc .vimrc
+cd .vim
+git submodule update --init --recursive
+cd ..
 sudo apt-get -y install silversurfer-ag ctags
 
 # Install Unity3D
@@ -57,6 +59,7 @@ ln -sf .git         ~/.git
 ln -sf .gitconfig   ~/.gitconfig
 ln -sf .irssi       ~/.irssi
 ln -sf .atom        ~/.atom
+ln -sf .vimrc       .vim/vimrc
 ln -sf etc/power.d/powerman /etc/power.d/powerman
 touch /usr/lib/pm-utils/power.d/powerman
 
