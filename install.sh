@@ -21,6 +21,13 @@ wget https://atom.io/download/deb -O atom.deb
 sudo dpkg -i atom.deb
 rm atom.deb
 
+# Instal Vim
+sudo apt-get install vim
+git clone https://github.com/KasperHdL/vim
+mv -fdr vim .vim
+ln -s .vim/vimrc .vimrc
+sudo apt-get -y install silversurfer-ag ctags
+
 # Install Unity3D
 wget http://download.unity3d.com/download_unity/unity-editor-5.1.0f3+2015091501_amd64.deb -O unityeditor.deb
 sudo dpkg -i unityeditor.deb
