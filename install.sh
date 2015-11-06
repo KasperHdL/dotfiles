@@ -9,6 +9,7 @@ sudo apt-get -y install screenfetch nodejs npm lib32gcc1 lib32stdc++ lib32stdc++
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian beta main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
 sudo apt-get update && sudo apt-get -y install mono-complete mono-devel ca-certificates-mono
+sudo apt-get upgrade
 
 # Install ASP.NET
 curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
