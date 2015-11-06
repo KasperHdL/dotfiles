@@ -3,7 +3,7 @@
 set -e
 
 # Install all the junk I need
-sudo apt-get -y install nodejs npm lib32gcc1 lib32stdc++ lib32stdc++6 libc6-i386 libpq5 ubuntu-restricted-extras cmake bzr rpm wget git curl blender build-essential irssi screen chromium-browser git gvfs-bin pm-utils make automake powertop python thermald ttf-ancient-fonts unzip zsh qemu libunwind8 gettext libssl-dev libcurl3-dev zlib1g libicu-dev
+sudo apt-get -y install screenfetch nodejs npm lib32gcc1 lib32stdc++ lib32stdc++6 libc6-i386 libpq5 ubuntu-restricted-extras cmake bzr rpm wget git curl blender build-essential irssi screen chromium-browser git gvfs-bin pm-utils make automake powertop python thermald ttf-ancient-fonts unzip zsh qemu libunwind8 gettext libssl-dev libcurl3-dev zlib1g libicu-dev
 
 # Install Mono
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
