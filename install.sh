@@ -33,5 +33,8 @@ rm smartgit.deb
 # Set zsh as default shell
 chsh -s /usr/bin/zsh
 
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo "Finished installing everything together with dotfiles!"
 echo "Happy coding $USER"
