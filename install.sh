@@ -26,15 +26,31 @@ sudo dpkg -i unityeditor.deb
 rm unity-editor.deb
 
 # Install SmartGit
-wget http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-7_0_3.deb -O smartgit.deb
-sudo dpkg -i smartgit.deb
-rm smartgit.deb
+#wget http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-7_0_3.deb -O smartgit.deb
+#sudo dpkg -i smartgit.deb
+#rm smartgit.deb
 
 # Set zsh as default shell
 chsh -s /usr/bin/zsh
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Adobefonts - Credits: https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116
+mkdir -p ~/.fonts/adobe-fonts/source-code-pro
+git clone -b release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
+# find ~/.fonts/ -iname '*.ttf' -exec echo \{\} \;
+fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
+
+# Do symlinks
+ln -sf .zshrc       ~/.zsrc
+ln -sf .oh-my-zsh   ~/.oh-my-zsh
+ln -sf .git         ~/.git
+ln -sf .gitconfig   ~/.gitconfig
+ln -sf .irssi       ~/.irssi
+ln -sf .atom        ~/.atom
+ln -sf etc/power.d/powerman /etc/power.d/powerman
+touch /usr/lib/pm-utils/power.d/powerman
 
 echo "Finished installing everything together with dotfiles!"
 echo "Happy coding $USER"

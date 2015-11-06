@@ -1,0 +1,13 @@
+"*":
+  "exception-reporting":
+    userId: "c71f2239-8146-b97e-4bb4-f2607a13e8d8"
+  welcome:
+    showOnStartup: false
+  core:
+    projectHome: "/home/jalict/Projects/"
+  editor:
+    invisibles: {}
+    tabLength: 4
+  "omnisharp-atom":
+    codeLens: false
+    enhancedHighlighting: true
